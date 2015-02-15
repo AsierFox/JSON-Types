@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>All Types</title>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+			* {
+				font-family: 'Ubuntu', sans-serif;
+				font-size: 1.2em;
+			}
+		</style>
+	</head>
+<body>
+	
+	<div id="content"></div>
+
+	<script type="text/javascript">
+
+		var json = {
+			"string": "Yeah!!",
+			"number": 6,
+			"bool": true,
+			"Null": null,
+			"array": [
+				66,
+				true,
+				"Hihi!"
+			],
+			"obj": {
+				"key": "value",
+				"subarray": [
+					{
+						"subsubarray": [
+							"Not founded"
+						]
+					},
+				 	{
+						"subsubarray": [
+							"You found it! xD"
+						]
+					}
+				]
+			}
+		};
+
+		document.getElementById('content').innerHTML = "String: " + json.string + "<br>Number: " + json.number + "<br>Boolean: " + json.bool + "<br>Array[2]: " + json.array[2] + "<br>Object: " + json.obj.key + "<br>Mistery: " + json.obj.subarray[1].subsubarray[0];
+
+	</script>
+</body>
+</html>
